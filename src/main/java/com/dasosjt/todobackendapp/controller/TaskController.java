@@ -13,7 +13,7 @@ import java.net.URI;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000/")
-@RequestMapping("/api/task")
+@RequestMapping("/api/task/v1")
 public class TaskController {
 
     private TaskService taskService;

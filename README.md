@@ -1,6 +1,6 @@
 # TodoBackendApp
 
-TodoBackendApp is a Spring Boot application that serves as a backend for a simple Todo application. It utilizes the Spring Boot Starter Parent with a version of 3.2.0 and is configured to work with Spring Boot 2.5.0.
+TodoBackendApp is a Spring Boot application that serves as a backend for a simple Task application. It utilizes the Spring Boot Starter Parent with a version of 3.2.0 and is configured to work with Spring Boot 2.5.0.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -15,7 +15,7 @@ TodoBackendApp is a Spring Boot application that serves as a backend for a simpl
 
 ## Introduction
 
-The project is structured as a Maven project and incorporates the Spring Boot framework. It provides a RESTful API for managing Todo items using reactive programming with Spring WebFlux and R2DBC.
+The project is structured as a Maven project and incorporates the Spring Boot framework. It provides a RESTful API for managing Task items using reactive programming with Spring WebFlux and R2DBC.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Before running the TodoBackendApp, ensure that you have the following prerequisi
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/TodoBackendApp.git
+    git clone https://github.com/dasosjt/TodoBackendApp.git
     ```
 
 2. Navigate to the project directory:
@@ -52,7 +52,7 @@ To run the TodoBackendApp, use the following Maven command:
 mvn spring-boot:run
 ```
 
-The application will start, and you can access the Todo API at `http://localhost:8080/todos`.
+The application will start, and you can access the Task API at `http://localhost:8080/api/task/`.
 
 ## Dependencies
 
