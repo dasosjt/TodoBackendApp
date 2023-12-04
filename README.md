@@ -52,7 +52,7 @@ To run the TodoBackendApp, use the following Maven command:
 mvn spring-boot:run
 ```
 
-The application will start, and you can access the Task API at `http://localhost:8080/api/task/`.
+The application will start, and you can access the Task API at `http://localhost:8080/api/v1/task/`.
 
 ## Dependencies
 
