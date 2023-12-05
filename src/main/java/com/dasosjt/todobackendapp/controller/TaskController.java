@@ -31,14 +31,15 @@ public class TaskController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mono<ResponseEntity<Object>> createTask(@RequestBody TaskEntity task) {
+    public Mono<ResponseEntity<TaskEntity>> createTask(@RequestBody TaskEntity task) {
         return taskService
             .create(task)
             .map(taskCreated ->
                 ResponseEntity
                     .created(URI.create("http://localhost:8080/api/task/%s"
                         .formatted(taskCreated.getId())))
-                    .build())
+                        .header("Access-Control-Expose-Headers", "Location")
+                        .body(taskCreated))
             .onErrorResume(e -> Mono.just(ResponseEntity.internalServerError().build()));
     }
 
