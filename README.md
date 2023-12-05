@@ -54,6 +54,12 @@ mvn spring-boot:run
 
 The application will start, and you can access the Task API at `http://localhost:8080/api/v1/task/`.
 
+## Postman
+
+Here it is a link for the Postman Collection
+
+```curl -X GET -H "Content-Type: application/json" -o TodoBackendAppCollection.json https://api.postman.com/collections/5351409-b968821a-576d-4686-a451-83b747a6aeb1?access_key=PMAT-01HGVR31TEQFYVVGHK5T1S4DQY```
+
 ## Dependencies
 
 - **Spring Boot Starter Data R2DBC**: Provides the necessary dependencies for R2DBC (Reactive Relational Database Connectivity).
